@@ -21,7 +21,7 @@ namespace AS_Assignment
                 {
                     if (Request.QueryString["Date"] != null)
                     {
-                        messageLB.Text = "Congratulations! You are logged in. Last Login: " + Request.QueryString["Date"];
+                        messageLB.Text = "Congratulations! You are logged in. Last Login: " + HttpUtility.HtmlEncode(Request.QueryString["Date"]);
                     }
                     else
                     {

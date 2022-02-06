@@ -166,7 +166,8 @@ namespace AS_Assignment
                 throw new Exception(ex.ToString());
             }
 
-            Response.Redirect(String.Format("TwoFactor.aspx?Email={0}", HttpUtility.HtmlEncode(emailTB.Text.Trim())), true);
+            var email = HttpUtility.HtmlEncode(emailTB.Text.Trim());
+            Response.Redirect(String.Format("TwoFactor.aspx?Email={0}", email), true);
         }
 
         protected byte[] encryptData(string data)

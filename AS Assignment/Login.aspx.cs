@@ -164,7 +164,7 @@ namespace AS_Assignment
                                                             qrreader.Close();
                                                             con.Close();
 
-                                                            Response.Redirect(String.Format("TwoFactor.aspx?Email={0}", HttpUtility.HtmlEncode(emailTB.Text.Trim())), false);
+                                                            Response.Redirect(String.Format("TwoFactor.aspx?Email={0}", email), false);
                                                             return;
                                                         }
                                                         else
@@ -179,7 +179,7 @@ namespace AS_Assignment
                                                 con.Close();
                                             }
 
-                                            Response.Redirect(String.Format("Authorize.aspx?Email={0}", HttpUtility.HtmlEncode(emailTB.Text.Trim())), false);
+                                            Response.Redirect(String.Format("Authorize.aspx?Email={0}", email), false);
 
                                         }
                                         else
