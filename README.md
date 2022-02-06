@@ -6,7 +6,7 @@ HTTP403.html is made by Gabriele Corti (https://codepen.io/borntofrappe/pen/GXLW
 
 2FA is made using Google Authenticator
 
-Everything else is made by me (Nian Ci) or from the practical notes.
+Everything else is made by me or from the practical notes.
 
 
 TO USE 2FA:
