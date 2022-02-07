@@ -129,6 +129,24 @@ namespace AS_Assignment
                                         {
                                             reader.Close();
                                             con.Close();
+
+                                            SqlCommand newupdate = new SqlCommand("UPDATE Account SET Lockout=@Lockout WHERE Email=@Email", con);
+                                            newupdate.Parameters.AddWithValue("@Email", email);
+                                            newupdate.Parameters.AddWithValue("@Lockout", 0);
+                                            newupdate.Connection = con;
+                                            try
+                                            {
+                                                con.Open();
+                                                newupdate.ExecuteNonQuery();
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                throw new Exception(ex.ToString());
+                                            }
+                                            finally
+                                            {
+                                                con.Close();
+                                            }
                                         }
 
                                         SqlCommand updatesql = new SqlCommand("UPDATE Account SET LastLogin=@LastLogin WHERE Email=@Email", con);

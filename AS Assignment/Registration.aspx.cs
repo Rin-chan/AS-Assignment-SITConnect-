@@ -30,6 +30,48 @@ namespace AS_Assignment
         {
             string pwd = HttpUtility.HtmlEncode(pwdTB.Text.ToString().Trim());
 
+            if (HttpUtility.HtmlEncode(fNameTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(fNameTB.Text.ToString().Trim()) == null)
+            {
+                fNameLB.Text = "First name cannot be empty.";
+                fNameLB.ForeColor = Color.Red;
+                return;
+            }
+
+            if (HttpUtility.HtmlEncode(lNameTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(lNameTB.Text.ToString().Trim()) == null)
+            {
+                lNameLB.Text = "Last name cannot be empty.";
+                lNameLB.ForeColor = Color.Red;
+                return;
+            }
+
+            if (HttpUtility.HtmlEncode(creditTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(creditTB.Text.ToString().Trim()) == null)
+            {
+                creditLB.Text = "Credit card cannot be empty.";
+                creditLB.ForeColor = Color.Red;
+                return;
+            }
+
+            if (HttpUtility.HtmlEncode(emailTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(emailTB.Text.ToString().Trim()) == null)
+            {
+                emailLB.Text = "Email cannot be empty.";
+                emailLB.ForeColor = Color.Red;
+                return;
+            }
+
+            if (HttpUtility.HtmlEncode(pwdTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(pwdTB.Text.ToString().Trim()) == null)
+            {
+                pwdLB.Text = "Password cannot be empty.";
+                pwdLB.ForeColor = Color.Red;
+                return;
+            }
+
+            if (HttpUtility.HtmlEncode(birthTB.Text.ToString().Trim()) == "" || HttpUtility.HtmlEncode(birthTB.Text.ToString().Trim()) == null)
+            {
+                birthLB.Text = "Birth date cannot be empty.";
+                birthLB.ForeColor = Color.Red;
+                return;
+            }
+
             int scores = checkPassword(pwd);
             if (scores < 4)
             {
