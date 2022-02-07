@@ -337,7 +337,7 @@ namespace AS_Assignment
 
             string captchaResponse = Request.Form["recaptcha"];
 
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret=6Lfc-lweAAAAAKPro82g45xMVrze8zMMolGJatIN &response=" + captchaResponse);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret= &response=" + captchaResponse);
 
             try
             {
