@@ -27,7 +27,8 @@ namespace AS_Assignment
 
         private static string TwoFactorKey(string email)
         {
-            return $"myverysecretkey+{email}";
+            // Removed to prevent leaking secret key
+            return $"";
         }
 
         protected void submitBtn_Click(object sender, EventArgs e)
