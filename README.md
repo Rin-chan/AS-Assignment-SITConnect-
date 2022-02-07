@@ -15,3 +15,6 @@ A 3rd party authentication software is required (such as Google Authenticator or
 Scan the QR code or copy the code given into the authenticator app to receive a code.
 
 For future logins, the authenticator app is required to get a code.
+
+
+VIDEO FOR DEMO: https://youtu.be/oeJ0XBgWEAc
