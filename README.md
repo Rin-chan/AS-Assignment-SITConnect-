@@ -17,4 +17,4 @@ Scan the QR code or copy the code given into the authenticator app to receive a 
 For future logins, the authenticator app is required to get a code.
 
 
-VIDEO FOR DEMO: https://youtu.be/oeJ0XBgWEAc
+VIDEO FOR DEMO: https://youtu.be/X-2eeYuXz40
