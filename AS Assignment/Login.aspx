@@ -10,7 +10,7 @@
             width: 100%;
         }
     </style>
-    <script src="https://www.google.com/recaptcha/api.js?render="></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lfc-lweAAAAAJZ5XaLa0TRGdRfUOQsTGBOyA-hp"></script>
 </head>
 <body>
     <h1><center>Login</center></h1>
@@ -53,7 +53,7 @@
 
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('', { action: 'submit' }).then(function (token) {
+            grecaptcha.execute('6Lfc-lweAAAAAJZ5XaLa0TRGdRfUOQsTGBOyA-hp', { action: 'submit' }).then(function (token) {
                 document.getElementById("recaptcha").value = token;
             });
         });
