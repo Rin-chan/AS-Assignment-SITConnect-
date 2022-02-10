@@ -21,7 +21,7 @@
                 <tr>
                     <td>Email</td>
                     <td>
-                        <asp:TextBox ID="emailTB" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="emailTB" runat="server" TextMode="Email"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
